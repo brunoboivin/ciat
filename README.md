@@ -9,6 +9,7 @@
 - [Navigating the Project Repository](#navigating-the-project-repository)
 - [Instructions for Running the Code](#instructions-for-running-the-code)
   - [Setup](#setup)
+  - [Specifications](#specifications)
   - [Demo](#demo)
 
 ## Features
