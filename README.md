@@ -5,6 +5,7 @@
 - [Features](#features)
 - [Publication](#publication)
   - [Abstract](#abstract)
+  - [Software](#software)
 - [Navigating the Project Repository](#navigating-the-project-repository)
 - [Instructions for Running the Code](#instructions-for-running-the-code)
   - [Setup](#setup)
@@ -29,6 +30,9 @@ Intracellular calcium responses encode action potential firing in spinal cord la
 ### Abstract
 Maladaptive plasticity of neurons in lamina I of the spinal cord is a lynchpin for development of chronic pain, and is critically dependent upon intracellular calcium signaling. However, the relationship between neuronal activity and intracellular calcium in these neurons is unknown. Here we combined two-photon calcium imaging with whole-cell electrophysiology to determine how action potential firing drives calcium responses within subcellular compartments of lamina I neurons. We found that single action potentials generated at the soma increase calcium concentration in the somatic cytosol and nucleus, and these calcium responses invade dendrites and dendritic spines by active backpropagation. Calcium responses in each compartment were dependent upon voltage-gated calcium channels, and somatic and nuclear calcium responses were amplified by release of calcium from ryanodine-sensitive intracellular stores. With bursts of action potentials, we found that calcium responses have the capacity to encode action potential frequency and number in all compartments. Together, these findings indicate that intracellular calcium serves as a readout of neuronal activity within lamina I neurons, providing a unifying mechanism through which activity may regulate plasticity, including that seen in chronic pain.
 
+### Software
+The software package was developed by Bruno Boivin during a studentship at SickKids (The Hospital for Sick Children, Toronto, Canada).
+
 ## Navigating the Project Repository
 - The `data` folder contains data that may be specific to the equipment used such as recording time points.
 - The `db` folder contains scripts for interfacing with and querying a database.
@@ -47,6 +51,12 @@ Before using this tool, you will need to install [MathWorks' MATLAB](https://www
 
 1. Launch MATLAB and navigate to the project repository (e.g. /usr/bruno/ciat).
 2. From the HOME tab in MATLAB's top navigation panel, click on "Set Path" and ensure that the entire ciat package is listed under the MATLAB search path. The project directory can be added to the path at once by clicking "Add with Subfolders..." and selecting the project directory "ciat".
+
+### Specifications
+- Input files consist of laser scanning microscopy files (.lsm) that contain data from two channels: green (G) and red (R).
+- Times of data acquisition are listed under `data/timepoints.txt` and pertain to the equipment and experiment.
+- A minimum of 264 time points are required to establish baseline activity. This parameter can be changed under the `functions/matrices` subdirectory.
+- Data from the first 1986 time points get stored in a database. This can be changed by updating the supported maximum number of columns under the `gui` package and in the underlying database.
 
 ### Demo
 This section will go over a simple demonstration of how to use the package with a small sample of data.
