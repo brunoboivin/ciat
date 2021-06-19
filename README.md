@@ -21,7 +21,7 @@
 - Data can be exported to a csv file or a local database.
 
 ## Publication
-Intracellular calcium responses encode action potential firing in spinal cord lamina I neurons. (Erika K. Harding<sup>1,2,3</sup>, Bruno Boivin<sup>1,4</sup>, Michael W. Salter<sup>1,2</sup>)
+[Intracellular calcium responses encode action potential firing in spinal cord lamina I neurons.](https://www.jneurosci.org/content/40/23/4439.long) (Erika K. Harding<sup>1,2,3</sup>, Bruno Boivin<sup>1,4</sup>, Michael W. Salter<sup>1,2</sup>)
 
 1. Program in Neurosciences & Mental Health, The Hospital for Sick Children, Toronto, ON, Canada.
 2. Department of Physiology, University of Toronto, Toronto, ON.
